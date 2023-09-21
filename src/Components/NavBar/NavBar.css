@@ -1,0 +1,42 @@
+* {
+    background-color: white;
+}
+
+
+.Logo {
+    display: flex;
+    align-items: start;
+}
+
+nav {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #A19797;
+}
+
+ul {
+    display: flex;
+    align-content: center;
+    background-color: #A19797;
+}
+
+li {
+    list-style-type: none;
+    color: black;
+    background-color: #A19797;
+    margin: 20px;
+    width: 100%;
+}
+
+img {
+    background-color: #A19797;
+    width: 220px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.a-link {
+    color: black;
+    background-color: #A19797;
+}
