@@ -9,10 +9,10 @@
 }
 
 nav {
-    height: 30px;
     display: flex;
-    align-items: center;
+    align-items: end;
     background-color: #A19797;
+    justify-content: space-between;
 }
 
 ul {
@@ -21,19 +21,20 @@ ul {
     background-color: #A19797;
 }
 
+
 li {
     list-style-type: none;
     color: black;
     background-color: #A19797;
     margin: 20px;
-    width: 100%;
+
 }
 
 img {
     background-color: #A19797;
     width: 220px;
     height: 120px;
-    margin-right: 20px;
+    margin-right: 570px;
 }
 
 .a-link {
