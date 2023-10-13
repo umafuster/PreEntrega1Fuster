@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //Componentes
 import NavBar from './Components/NavBar/NavBar';
@@ -15,15 +15,15 @@ const App = () => {
 
   return (
     <div>
-      <NavBar />
-      <ItemListContainer greeting={"Bienvenidos a Bare Essentials"} />
-     <BrowserRouter>
-     <Routes>
-      <Route path='/' element={<HomePage/>}/>
-      <Route path='/category/:id' element={<ListContainerPage/>}/>
-      <Route path='/item/:id' element={<DetailPage/>}/>
-     </Routes>
-     </BrowserRouter>
+      <BrowserRouter>
+        <NavBar />
+        <ItemListContainer greeting={"Bienvenidos a Bare Essentials"} />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/category/:id' element={<ListContainerPage />} />
+          <Route path='/item/:id' element={<DetailPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };

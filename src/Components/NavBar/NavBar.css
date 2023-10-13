@@ -3,10 +3,29 @@
 }
 
 
+/* Logo */
+
 .Logo {
     display: flex;
     align-items: start;
 }
+
+.link-logo {
+    background-color: #A19797;
+}
+
+img {
+    background-color: #A19797;
+    width: 220px;
+    height: 120px;
+    margin-right: 570px;
+}
+
+/* Fin Logo */
+
+
+
+/* Header */
 
 nav {
     display: flex;
@@ -22,22 +41,14 @@ ul {
 }
 
 
-li {
-    list-style-type: none;
-    color: black;
-    background-color: #A19797;
-    margin: 20px;
-
-}
-
-img {
-    background-color: #A19797;
-    width: 220px;
-    height: 120px;
-    margin-right: 570px;
-}
 
 .a-link {
     color: black;
     background-color: #A19797;
+    list-style-type: none;
+    color: black;
+    background-color: #A19797;
+    margin: 10px;
 }
+
+/* Fin Header */
