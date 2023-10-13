@@ -1,6 +1,17 @@
 .bienvenida {
+    display: flex;
+    justify-content: center;
     color: black;
     font-size: large;
     font-family: serif;
     margin: 100px;
 }
+
+.card-component {
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+  }
