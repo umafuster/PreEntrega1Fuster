@@ -19,8 +19,8 @@ const DetailPage = () => {
 
 
   return (
-    <div>
-      {item ? <CardComponent item={item} /> : null}
+    <div style={{ display: "flex", justifyContent: "center", margin: 20 }}>
+      {item.id ? <CardComponent item={item} /> : null}
     </div>
   );
 };

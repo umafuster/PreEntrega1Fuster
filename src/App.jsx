@@ -9,7 +9,7 @@ import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailCont
 //Pages
 import HomePage from './Pages/HomePage/HomePage';
 import DetailPage from './Pages/DetailPage/DetailPage';
-import ListContainerPage from './Pages/ListContainerPage/ListContainerPage';
+import CategoryPage from './Pages/CategoryPage/CategoryPage';
 const App = () => {
 
 
@@ -17,11 +17,10 @@ const App = () => {
     <div>
       <BrowserRouter>
         <NavBar />
-        <ItemListContainer greeting={"Bienvenidos a Bare Essentials"} />
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/category/:id' element={<ListContainerPage />} />
-          <Route path='/item/:id' element={<DetailPage />} />
+          <Route path='/category/:categoryId' element={<CategoryPage />} />
+          <Route path='/detail/:id' element={<DetailPage />} />
         </Routes>
       </BrowserRouter>
     </div>

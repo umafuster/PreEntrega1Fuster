@@ -9,7 +9,7 @@ import "./ItemListContainer.css";
 import CardComponent from '../CardComponent/CardComponent';
 import { Link } from 'react-router-dom';
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const ItemListContainer = ({ greeting }) => {
             </Link>
           </div>
         );
-      })};
+      })}
       </div>
     </div>
   );

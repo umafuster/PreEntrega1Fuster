@@ -16,21 +16,22 @@ useEffect(() => {
     });
 }, []);
 
-let filteredITems = items.filter((item) => {
-    return item.category === categoryId
-})
+let filteredItems = items.filter((item) => {
+    return item.category === categoryId;
+});
+
   return (
     <div className='card-component'>
-        {filteredITems.map((item) => {
+        {filteredItems.map((item) => {
             return (
                 <div key={item.id}>
                     <CardComponent item={item} />
                 </div>    
-            );
-        })};
+            )
+        })}
 
     </div>
-  )
-}
+  );
+};
 
 export default CategoryPage;
