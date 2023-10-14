@@ -1,13 +1,13 @@
 import React from 'react';
-
+import "./HomePage.css";
 //Component
 import ItemListContainer from '../../Components/ItemListContainer/ItemListContainer';
 
 
-export const HomePage = () => {
+export const HomePage = ({greeting}) => {
   return (
     <div>
-      <h1>Home</h1>
+      <h1 className='bienvenida'>{greeting}</h1>
     <ItemListContainer />
     </div>
   );

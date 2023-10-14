@@ -3,8 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //Componentes
 import NavBar from './Components/NavBar/NavBar';
-import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 
 //Pages
 import HomePage from './Pages/HomePage/HomePage';
@@ -18,7 +16,7 @@ const App = () => {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path='/' element={<HomePage />} />
+          <Route path='/' element={<HomePage  greeting={"Bienvenidos a Bare Essentials"} />} />
           <Route path='/category/:categoryId' element={<CategoryPage />} />
           <Route path='/detail/:id' element={<DetailPage />} />
         </Routes>

@@ -4,6 +4,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
+//CSS
+import "./CardComponent.css"
+
 const CardComponent = ({item}) => {
 const {name, date, description, img} = item;
     return (
@@ -15,14 +18,14 @@ const {name, date, description, img} = item;
           image={img}
           alt="Producto"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+        <CardContent className='card-typo'>
+          <Typography className='card-typo' gutterBottom variant="h5" component="div">
             {name}
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary">
+          <Typography className='card-typo' variant="subtitle1" color="text.secondary">
             {date}
           </Typography>
-          <Typography variant="body3" color="text.secondary">
+          <Typography className='card-typo' variant="body3" color="text.secondary">
             {description}
           </Typography>
         </CardContent>

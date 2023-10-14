@@ -19,7 +19,6 @@ const ItemListContainer = () => {
   }, []);
   return (
     <div >
-      <h1 className='bienvenida'>{greeting}</h1>
       <div className='card-component'>
       {items.map((item) => {
         return (

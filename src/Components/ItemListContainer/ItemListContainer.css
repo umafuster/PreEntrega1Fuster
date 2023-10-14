@@ -1,12 +1,4 @@
-.bienvenida {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-size: large;
-    font-family: serif;
-    margin: 100px;
-}
-
+/* Cards */
 .card-component {
     margin-left: 200px;
     display: grid;
@@ -15,3 +7,4 @@
     gap: 30px;
     padding: 10px;
   }
+/* Fin Cards */
