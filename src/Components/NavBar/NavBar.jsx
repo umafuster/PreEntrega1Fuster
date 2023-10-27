@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 
 export const NavBar = () => {
     return (
+        <div>
         <nav>
             <ul>
                 <Link className="link-logo" to={'/'}>
@@ -23,10 +24,14 @@ export const NavBar = () => {
                 <Link className="a-link" to="/">Home</Link>
                 <Link className="a-link" to="/category/Skincare">Skincare</Link>
                 <Link className="a-link" to="/category/Makeup">Makeup</Link>
-                <Link className='a-link' to="/">Products</Link>
+                <Link className='a-link' to="/product">Products</Link>
                 <li className="a-link"><CartWidget /></li>
             </ul>
         </nav>
+        <div>
+            <hr />
+        </div>
+        </div>
     );
 };
 

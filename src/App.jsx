@@ -8,8 +8,10 @@ import NavBar from './Components/NavBar/NavBar';
 import HomePage from './Pages/HomePage/HomePage';
 import DetailPage from './Pages/DetailPage/DetailPage';
 import CategoryPage from './Pages/CategoryPage/CategoryPage';
-const App = () => {
+import ProductPage from './Pages/ProductPage/ProductPage';
 
+
+const App = () => {
 
   return (
     <div>
@@ -19,6 +21,7 @@ const App = () => {
           <Route path='/' element={<HomePage  greeting={"Bienvenidos a Bare Essentials"} />} />
           <Route path='/category/:categoryId' element={<CategoryPage />} />
           <Route path='/detail/:id' element={<DetailPage />} />
+          <Route path='/product' element={<ProductPage />} />
         </Routes>
       </BrowserRouter>
     </div>

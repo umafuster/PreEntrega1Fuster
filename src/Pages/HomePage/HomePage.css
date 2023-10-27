@@ -8,3 +8,15 @@
     margin: 100px;
 }
 /* Fin Saludos Bienvenida */
+
+div .img-bienvenida {
+    background-color: #340c0c;
+    height: 500px;
+    width: 100%;
+}
+
+.img-inicio {
+    background-color: #340c0c;
+    width:  60%;
+    height: 500px;
+}
