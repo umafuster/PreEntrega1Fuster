@@ -9,14 +9,32 @@
 }
 /* Fin Saludos Bienvenida */
 
-div .img-bienvenida {
+.img-bienvenida {
     background-color: #340c0c;
     height: 500px;
-    width: 100%;
+    width: 1000px;
+    margin-left: 80px;
+    position: relative;
 }
 
 .img-inicio {
     background-color: #340c0c;
     width:  60%;
     height: 500px;
+    position: absolute;
+}
+
+.txt-bienvenida {
+    color: whitesmoke;
+    font-size: xx-large;
+    background-color: #340c0c;
+    font-family: serif;
+    font-weight: 700;
+    padding-top: 100px;
+    position: absolute;
+    white-space: initial;
+    width: 300px;
+    text-align: center;
+    padding-left: 65%;
+    line-height: 60px;
 }

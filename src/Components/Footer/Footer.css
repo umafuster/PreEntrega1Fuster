@@ -1,0 +1,56 @@
+/* Logo */
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.link-logo {
+    background-color: white;
+}
+
+.img-footer {
+    background-color: white;
+    width: 220px;
+    height: 120px;
+    margin-right: 570px;
+    display: block;
+}
+
+/* Fin Logo */
+
+
+/* FOOTER */
+
+.nav-footer {
+    margin-left: 40%;
+    display: block;
+    background-color: white;
+    justify-content: center;
+}
+
+.ul-footer {
+    margin-left: 5%;
+    display: block;
+    background-color: white;
+}
+
+
+
+.a-link {
+    color: black;
+    background-color: white;
+    list-style-type: none;
+    color: black;
+    margin: 10px;
+}
+
+.hr-footer {
+    height: 1px;
+    background-color: black;
+    width: 700px;
+    margin-top: 90px;
+}
+
+
+/* FIN FOOTER */

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //Componentes
 import NavBar from './Components/NavBar/NavBar';
+import Footer from './Components/Footer/Footer';
 
 //Pages
 import HomePage from './Pages/HomePage/HomePage';
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='/product' element={<ProductPage />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 };
