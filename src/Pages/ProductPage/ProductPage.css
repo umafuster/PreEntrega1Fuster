@@ -1,0 +1,8 @@
+.productpage-title {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: xx-large;
+    font-family: serif;
+    margin: 60px;
+}
