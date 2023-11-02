@@ -1,43 +1,43 @@
 [
     {
       "id": 1,
-      "name": "Limpiador",
+      "name": "Base",
       "date": "Un limpiador de Scualano, nada ordinario!",
       "description": "Pionero en el mundo de los limpiadores. Un gel cremoso que se convertirá en aceite para atrapar toda la suciedad. Apto para todo tipo de pieles",
-      "img": "/Images/limpiador.webp",
-      "category": "Skincare"
+      "img": "/Images/base.webp",
+      "category": "Makeup"
     },
     {
       "id": 2,
-      "name": "Vitamina C",
+      "name": "Blush",
       "date": "Un sérum de vitamina C en aceite",
       "description": "Una potente solución para unificar el tono de la piel, suavizar su textura y aportar luminosidad al rostro. Luce de una piel renovada con este sérum! Apto para todo tipo de pieles",
-      "img": "/Images/vitaminaC.webp",
-      "category": "Skincare"
+      "img": "/Images/blush.webp",
+      "category": "Makeup"
     },
     {
       "id": 3,
-      "name": "Crema Hidratante",
+      "name": "Gel de Cejas",
       "date": "Humectante facial nada graso que potencia los factores de hidratación naturales (NMF) de la dermis para lograr una piel protegida y profundamente hidratada a nivel de la superficie.",
       "description": "Una crema hidratante facial experta en potenciar los factores de hidratación naturales de la dermis para lograr una piel protegida y profundamente hidratada. Que no te falta tu hidratante preferida, estés donde estés!!! Apta para todo tipo de pieles, incluso muy sensibles",
-      "img": "/Images/crema.webp",
-      "category": "Skincare"
+      "img": "/Images/cejas.webp",
+      "category": "Makeup"
     },
     {
       "id": 4,
-      "name": "Protector Solar",
+      "name": "Contorno",
       "date": "Mineral UV Filters SPF 15 ofrece una innovadora protección solar facial con la última tecnología que hace mucho más que proteger tu cutis contra los efectos dañinos y de envejecimiento del sol, ayuda a la lucha contra los radicales libres.",
       "description": "Con filtros minerales para protegerte del sol combinado con una red de antioxidantes bioactivos, un complejo de hidratación de azúcares naturales, lípidos no comedogénicos para hidratar y Pimienta de Tasmania para calmar tu piel. Un combo perfecto de hidratación y protección ¡¡Plántale cara a los rayos del sol y disfrútalo!",
-      "img": "/Images/protectorsolar.webp",
-      "category": "Skincare"
+      "img": "/Images/contorno.webp",
+      "category": "Makeup"
     },
     {
       "id": 5,
-      "name": "Base",
+      "name": "Contorno de Ojos",
       "date": "Para pieles secas y grasas, funciona bien en ambas",
       "description": "Bases de maquillaje con cobertura media-alta preparadas con formulaciones de cobertura total disponibles en una amplia gama de colores compuesta por 21 tonos.",
-      "img": "/Images/base.webp",
-      "category": "Makeup"
+      "img": "/Images/contornoOjos.webp",
+      "category": "Skincare"
     },
     {
       "id": 6,
@@ -45,6 +45,78 @@
       "date": "Disponible en una gama completa de 21 tonos que combinan directamente con la línea de base The Ordinary.",
       "description": "Un sistema de emulsión fácil de esparcir que ofrece una cobertura muy alta con un acabado natural. Con un aplicador fino para una aplicación fácil y precisa, esta fórmula le da a los pigmentos un aspecto natural en la piel y no migrará a las líneas finas.",
       "img": "/Images/corrector.webp",
+      "category": "Makeup"
+    },
+    {
+      "id": 7,
+      "name": "Crema Hidratante",
+      "date": "Disponible en una gama completa de 21 tonos que combinan directamente con la línea de base The Ordinary.",
+      "description": "Un sistema de emulsión fácil de esparcir que ofrece una cobertura muy alta con un acabado natural. Con un aplicador fino para una aplicación fácil y precisa, esta fórmula le da a los pigmentos un aspecto natural en la piel y no migrará a las líneas finas.",
+      "img": "/Images/crema.webp",
+      "category": "Skincare"
+    },
+    {
+      "id": 8,
+      "name": "Delineador de Labios",
+      "date": "Disponible en una gama completa de 21 tonos que combinan directamente con la línea de base The Ordinary.",
+      "description": "Un sistema de emulsión fácil de esparcir que ofrece una cobertura muy alta con un acabado natural. Con un aplicador fino para una aplicación fácil y precisa, esta fórmula le da a los pigmentos un aspecto natural en la piel y no migrará a las líneas finas.",
+      "img": "/Images/delineadorLabios.webp",
+      "category": "Makeup"
+    },  
+    {
+      "id": 9,
+      "name": "Delineador de Ojos",
+      "date": "Disponible en una gama completa de 21 tonos que combinan directamente con la línea de base The Ordinary.",
+      "description": "Un sistema de emulsión fácil de esparcir que ofrece una cobertura muy alta con un acabado natural. Con un aplicador fino para una aplicación fácil y precisa, esta fórmula le da a los pigmentos un aspecto natural en la piel y no migrará a las líneas finas.",
+      "img": "/Images/delineadorOjos.webp",
+      "category": "Makeup"
+    },
+    {
+      "id": 10,
+      "name": "Gloss",
+      "date": "Disponible en una gama completa de 21 tonos que combinan directamente con la línea de base The Ordinary.",
+      "description": "Un sistema de emulsión fácil de esparcir que ofrece una cobertura muy alta con un acabado natural. Con un aplicador fino para una aplicación fácil y precisa, esta fórmula le da a los pigmentos un aspecto natural en la piel y no migrará a las líneas finas.",
+      "img": "/Images/gloss.webp",
+      "category": "Makeup"
+    },
+    {
+      "id": 11,
+      "name": "Labial",
+      "date": "Disponible en una gama completa de 21 tonos que combinan directamente con la línea de base The Ordinary.",
+      "description": "Un sistema de emulsión fácil de esparcir que ofrece una cobertura muy alta con un acabado natural. Con un aplicador fino para una aplicación fácil y precisa, esta fórmula le da a los pigmentos un aspecto natural en la piel y no migrará a las líneas finas.",
+      "img": "/Images/labial.webp",
+      "category": "Makeup"
+    },
+    {
+      "id": 13,
+      "name": "Mascara de pestañas",
+      "date": "Disponible en una gama completa de 21 tonos que combinan directamente con la línea de base The Ordinary.",
+      "description": "Un sistema de emulsión fácil de esparcir que ofrece una cobertura muy alta con un acabado natural. Con un aplicador fino para una aplicación fácil y precisa, esta fórmula le da a los pigmentos un aspecto natural en la piel y no migrará a las líneas finas.",
+      "img": "/Images/mascara.webp",
+      "category": "Makeup"
+    },
+    {
+      "id": 14,
+      "name": "Removedor de maquillaje",
+      "date": "Disponible en una gama completa de 21 tonos que combinan directamente con la línea de base The Ordinary.",
+      "description": "Un sistema de emulsión fácil de esparcir que ofrece una cobertura muy alta con un acabado natural. Con un aplicador fino para una aplicación fácil y precisa, esta fórmula le da a los pigmentos un aspecto natural en la piel y no migrará a las líneas finas.",
+      "img": "/Images/removedor.webp",
+      "category": "Skincare"
+    },
+    {
+      "id": 15,
+      "name": "Serum Vitamina C",
+      "date": "Disponible en una gama completa de 21 tonos que combinan directamente con la línea de base The Ordinary.",
+      "description": "Un sistema de emulsión fácil de esparcir que ofrece una cobertura muy alta con un acabado natural. Con un aplicador fino para una aplicación fácil y precisa, esta fórmula le da a los pigmentos un aspecto natural en la piel y no migrará a las líneas finas.",
+      "img": "/Images/serumVitC.webp",
+      "category": "Skincare"
+    },
+    {
+      "id": 16,
+      "name": "Sombras de Ojos",
+      "date": "Disponible en una gama completa de 21 tonos que combinan directamente con la línea de base The Ordinary.",
+      "description": "Un sistema de emulsión fácil de esparcir que ofrece una cobertura muy alta con un acabado natural. Con un aplicador fino para una aplicación fácil y precisa, esta fórmula le da a los pigmentos un aspecto natural en la piel y no migrará a las líneas finas.",
+      "img": "/Images/sombras.webp",
       "category": "Makeup"
     }
   ]
