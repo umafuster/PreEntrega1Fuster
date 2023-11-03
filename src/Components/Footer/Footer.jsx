@@ -13,8 +13,8 @@ const Footer = () => {
             <nav className='nav-footer'>
                 <img className='img-footer' src={img} alt="" />
                 <ul className='ul-footer'>
-                    <li className='a-link'>Mail: bareessentials@gmail.com</li>
-                    <li className='a-link'>Telefono: 0810-555-3456</li>
+                    <li className='a-link-footer'>Mail: bareessentials@gmail.com</li>
+                    <li className='a-link-footer'>Telefono: 0810-555-3456</li>
                 </ul>
             </nav>
         </div>

@@ -1,10 +1,5 @@
 /* Logo */
 
-.Logo {
-    display: flex;
-    align-items: center;
-}
-
 .link-logo {
     background-color: white;
 }
@@ -15,6 +10,7 @@
     height: 120px;
     margin-right: 570px;
     display: block;
+    margin-left: 40%;
 }
 
 /* Fin Logo */
@@ -23,26 +19,24 @@
 /* FOOTER */
 
 .nav-footer {
-    margin-left: 40%;
     display: block;
     background-color: white;
     justify-content: center;
 }
 
 .ul-footer {
-    margin-left: 5%;
     display: block;
     background-color: white;
 }
 
 
 
-.a-link {
+.a-link-footer {
     color: black;
     background-color: white;
     list-style-type: none;
     color: black;
-    margin: 10px;
+    margin-left: 40%;
 }
 
 .hr-footer {
