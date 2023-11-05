@@ -18,6 +18,7 @@ const styles = {
     containerShop: {
       textAlign: "center",
       paddingTop: 20,
+      color: black,
     },
   };
 
