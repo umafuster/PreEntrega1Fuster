@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-export const CartWidget = () => {
+import { Link } from 'react-router-dom';
+
+
+
+const CartWidget = () => {
+
     return (
         <div>
-            <ShoppingCartIcon />
-            0
-        </div>
+           <ShoppingCartIcon /> 
+           </div>
     );
 };
 

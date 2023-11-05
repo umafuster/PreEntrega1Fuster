@@ -18,7 +18,8 @@ const styles = {
     containerShop: {
       textAlign: "center",
       paddingTop: 20,
-      color: black,
+      color: "black",
+      fontWeight: "bold",
     },
   };
 
@@ -28,7 +29,7 @@ const initialState = {
     mail: "",
 };
 
-const ShopPage = () => {
+const CheckoutForm = () => {
     const [values, setValues] = useState(initialState);
     const [purchaseID, setPurchaseId] = useState("");
 
@@ -80,4 +81,4 @@ const ShopPage = () => {
 }
 
 
-export default ShopPage;
+export default CheckoutForm;

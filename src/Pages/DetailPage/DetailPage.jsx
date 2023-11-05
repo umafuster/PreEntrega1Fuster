@@ -22,6 +22,9 @@ const DetailPage = () => {
       });
     }, [id]); */
 
+  
+
+
   useEffect(() => {
     const getProducts = async () => {
       const q = query(collection(db, "products"), where(documentId(), "==", id));

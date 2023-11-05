@@ -15,8 +15,8 @@ import ShopPage from "./Pages/ShopPage/ShopPage";
 
 
 
-
 const App = () => {
+const [cart, setCart] = useState([]);
 
   return (
     <div>

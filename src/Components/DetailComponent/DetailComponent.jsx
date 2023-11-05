@@ -1,53 +1,70 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 
 // CSS
 import "./DetailComponent.css";
 
 // MUI
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import ProductCount from '../ProductCount/ProductCount';
+import ItemListContainer from '../ItemListContainer/ItemListContainer';
+
 
 
 
 const DetailComponent = ({ product }) => {
     const { img } = product;
 
+    const [quantity, setQuantity] = useState(1);
+
+    const handleRest = () => {
+        quantity > 1 && setQuantity(quantity - 1);
+    };
+
+    const handleAdd = () => {
+       quantity < product.stock && setQuantity(quantity + 1);
+    };
+
+    const handleAddToCart = () => {
+        console.log ({...product, quantity});
+    };
+   
+
     return (
-        <Card sx={{ maxWidth: 1000 }} >
-            <CardMedia
-            className='detail-card-container'
-                component="img"
-                alt="Producto"
-                height="300"
-                image={img}
-            />
-            <CardContent className='card-typo'>
-                <Typography className='card-typo' gutterBottom variant="h5" component="div">
-                    {product.name}
-                </Typography>
-                <Typography className='card-typo' variant="body2" color="text.secondary">
-                    {product.date}
-                </Typography>
-                <Typography className='card-typo' variant="body2" color="text.secondary">
-                    {product.description}
-                </Typography>
-                <Typography className='card-typo' variant="body2" color="text.secondary">
-                    {product.category}
-                </Typography>
-                <Typography className='card-typo' variant="body2" color="text.secondary">
-                    {product.price}
-                </Typography>
-            </CardContent>
-            <CardActions className='card-typo'>
-                <Button size="xx-large">-</Button>
-                <Button size="xx-large">+</Button>
-            </CardActions>
-        </Card>
+        <div>
+            <Card sx={{ maxWidth: 1000 }} >
+                <CardMedia
+                    className='detail-card-container'
+                    component="img"
+                    alt="Producto"
+                    height="300"
+                    image={img}
+                />
+                <CardContent className='card-typo'>
+                    <Typography className='card-typo' gutterBottom variant="h5" component="div">
+                        {product.name}
+                    </Typography>
+                    <Typography className='card-typo' variant="body2" color="text.secondary">
+                        {product.date}
+                    </Typography>
+                    <Typography className='card-typo' variant="body2" color="text.secondary">
+                        {product.description}
+                    </Typography>
+                    <Typography className='card-typo' variant="body2" color="text.secondary">
+                        {product.category}
+                    </Typography>
+                    <Typography className='card-typo' variant="body2" color="text.secondary">
+                        ${product.price}
+                    </Typography>
+                </CardContent>
+                <ProductCount quantity={quantity} handleAdd={handleAdd} handleRest={handleRest} handleAddToCart={handleAddToCart}/>
+            </Card>
+
+        </div>
     );
+
 }
 
 
