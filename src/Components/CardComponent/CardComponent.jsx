@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import "./CardComponent.css"
 
 const CardComponent = ({ product }) => {
-  const { name, date, description, img } = product;
+  const { img } = product;
   return (
     <Card sx={{ maxWidth: 350 }}>
 
