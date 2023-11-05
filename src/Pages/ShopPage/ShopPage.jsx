@@ -14,7 +14,18 @@ import TextField from '@mui/material/TextField';
 import MessageSucces from '../../Components/MessageSuccess/MessageSuccess';
 
 
+const styles = {
+    containerShop: {
+      textAlign: "center",
+      paddingTop: 20,
+    },
+  };
 
+const initialState = {
+    name: "",
+    lastName: "",
+    mail: "",
+};
 
 const ShopPage = () => {
     const [values, setValues] = useState(initialState);
@@ -34,9 +45,9 @@ const ShopPage = () => {
         setPurchaseId(docRef.id);
     }
     return (
-        <div>
-            <h1>Shop</h1>
-            <form className='form-container'>
+        <div style={styles.containerShop}>
+            <h1 className='shop-title'>Shop</h1>
+            <form className='form-container' onSubmit={handleOnSubmit}>
                 <TextField
                     placeholder='Name'
                     name='name'

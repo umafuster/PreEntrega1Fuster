@@ -1,0 +1,28 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: white;
+}
+
+.btn-submit{
+    background: #8f8c8c;
+	color: white;
+	height: 54px;
+	width: 150px;
+	border-radius: 8px;
+	font-size: 18px;
+	border: none;
+	margin: 10px;
+}
+
+.shop-title {
+    text-align: center;
+}
+
+
+::placeholder {
+    color: black;
+}

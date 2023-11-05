@@ -11,6 +11,7 @@ import HomePage from './Pages/HomePage/HomePage';
 import DetailPage from './Pages/DetailPage/DetailPage';
 import CategoryPage from './Pages/CategoryPage/CategoryPage';
 import ProductPage from './Pages/ProductPage/ProductPage';
+import ShopPage from "./Pages/ShopPage/ShopPage";
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/category/:categoryId' element={<CategoryPage />} />
           <Route path='/detail/:id' element={<DetailPage />} />
           <Route path='/product' element={<ProductPage />} />
+          <Route path='/shop' element={<ShopPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />
