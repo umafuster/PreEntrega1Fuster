@@ -7,8 +7,8 @@ import Typography from '@mui/material/Typography';
 //CSS
 import "./CardComponent.css"
 
-const CardComponent = ({ item }) => {
-  const { name, date, description, img } = item;
+const CardComponent = ({ product }) => {
+  const { name, date, description, img } = product;
   return (
     <Card sx={{ maxWidth: 350 }}>
 
@@ -21,13 +21,13 @@ const CardComponent = ({ item }) => {
       />
       <CardContent className='card-typo'>
         <Typography className='card-typo' gutterBottom variant="h5" component="div">
-          {name}
+          {product.name}
         </Typography>
         <Typography className='card-typo' variant="subtitle1" color="text.secondary">
-          {date}
+          {product.date}
         </Typography>
         <Typography className='card-typo' variant="body3" color="text.secondary">
-          {description}
+          {product.description}
         </Typography>
       </CardContent>
 

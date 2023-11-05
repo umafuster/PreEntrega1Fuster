@@ -1,36 +1,47 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 //CSS
 import "./CategoryPage.css"
 
 //Components
 import CardComponent from '../../Components/CardComponent/CardComponent';
 
+// Firestore
+import { db } from "../../firebase/firebaseConfig";
+import { collection, query, where, getDocs } from "firebase/firestore";
+
 const CategoryPage = () => {
-    const [items, setItems] = useState([]);
+    const [products, setProducts] = useState([]);
     let { categoryId } = useParams();
 
     useEffect(() => {
-        axios.get('/products.json').then((res) => {
-            setItems(res.data);
-        });
+        const getProducts = async () => {
+            const q = query(collection(db, "products"));
+            const docs = [];
+            const querySnapshot = await getDocs(q);
+            querySnapshot.forEach((doc) => {
+                docs.push({ ...doc.data(), id: doc.id });
+            });
+            setProducts(docs);
+        };
+        getProducts();
     }, []);
 
-    let filteredItems = items.filter((item) => {
-        return item.category === categoryId;
+    let filteredProducts = products.filter((product) => {
+        return product.category === categoryId;
     });
 
     return (
         <div>
             <h2 className='category'>{categoryId}</h2>
             <div className='card-component'>
-                {filteredItems.map((item) => {
+                {filteredProducts.map((product) => {
                     return (
-                        <div key={item.id}>
-                            <Link to={`/detail/${item.id}`}>
-                            <CardComponent item={item} />
+                        <div key={product.id}>
+                            <Link to={`/detail/${product.id}`}>
+                                <CardComponent product={product} />
                             </Link>
                         </div>
                     )

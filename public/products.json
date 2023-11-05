@@ -5,7 +5,8 @@
       "date": "AIRBRUSH FLAWLESS FOUNDATION",
       "description": "My stay all day, full coverage foundation with a natural matte finish!",
       "img": "/Images/base.webp",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$23000"
     },
     {
       "id": 2,
@@ -13,7 +14,8 @@
       "date": "MATTE BEAUTY BLUSH WAND",
       "description": "Easy liquid blush! Pink matte blush wand for a beautifying pop of colour!",
       "img": "/Images/blush.webp",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$14000"
     },
     {
       "id": 3,
@@ -21,7 +23,8 @@
       "date": "BROW LIFT",
       "description": "Cream-wax refillable eyebrow pencil to fill, add shape and structure to your brows.",
       "img": "/Images/cejas.webp",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$10000"
     },
     {
       "id": 4,
@@ -29,7 +32,8 @@
       "date": "HOLLYWOOD CONTOUR WAND",
       "description": "Light creamy contour formula.",
       "img": "/Images/contorno.jpg",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$20000"
     },
     {
       "id": 5,
@@ -37,7 +41,8 @@
       "date": "MAGIC EYE RESCUE",
       "description": "My hydrating, smoothing, brightening effect eye cream!",
       "img": "/Images/contornoOjos.webp",
-      "category": "Skincare"
+      "category": "Skincare",
+      "price": "$18000"
     },
     {
       "id": 6,
@@ -45,7 +50,8 @@
       "date": "BEAUTIFUL SKIN RADIANT CONCEALER",
       "description": "Medium-coverage hydrating concealer to conceal, correct, brighten, and lift the look of your eyes and face!",
       "img": "/Images/corrector.webp",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$22000"
     },
     {
       "id": 7,
@@ -53,7 +59,8 @@
       "date": "CHARLOTTE'S MAGIC CREAM",
       "description": "Insatnt Turnaround moisturiser for hydrated, glowing, plumper looking skin!",
       "img": "/Images/crema.webp",
-      "category": "Skincare"
+      "category": "Skincare",
+      "price": "$24000"
     },
     {
       "id": 8,
@@ -61,7 +68,8 @@
       "date": "LIP CHEAT",
       "description": "My iconic nude-pink lip liner pencil that suits everyone for a defined, fuller looking Pillow Talk pout!",
       "img": "/Images/delineadorLabios.webp",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$15000"
     },  
     {
       "id": 9,
@@ -69,7 +77,8 @@
       "date": "SLEEP CHEAT LINER DUO",
       "description": "Peachy-nude and navy eyeliner duo for eyes that look bigger, brighter and wide awake!",
       "img": "/Images/delineadorOjos.webp",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$15000"
     },
     {
       "id": 10,
@@ -77,7 +86,8 @@
       "date": "PINKGASM JEWEL LIPS",
       "description": "Hydrating, plump-effect lip gloss in pearlescent pink for love-glazed lips with a dazzling diamond finish!",
       "img": "/Images/gloss.webp",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$20000"
     },
     {
       "id": 11,
@@ -85,39 +95,44 @@
       "date": "MATTE REVOLUTION",
       "description": "My ICONIC matte nude-pink lipstick for a kiss of Pillow Talk magic!",
       "img": "/Images/labial.webp",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$23000"
     },
     {
-      "id": 13,
+      "id": 12,
       "name": "Mascara",
       "date": "PILLOW TALK PUSH UP LASHES!",
       "description": "Pillow Talk mascara in a jet-black shade for instant volume, length, stretch and a 24-Hour vertical lift effect!",
       "img": "/Images/mascara.webp",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$17000"
     },
     {
-      "id": 14,
+      "id": 13,
       "name": "Makeup remover",
       "date": "TAKE IT ALL OFF",
       "description": "My oil-based bi-phase makeup remover with eyebright + Chamomile for your eyes, lashes and lips!",
       "img": "/Images/removedor.webp",
-      "category": "Skincare"
+      "category": "Skincare",
+      "price": "$14000"
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "Serum",
       "date": "MAGIC SERUM CRYSTAL ELIXIR",
       "description": "A supercharged serum with clinically proven hydration & benefits!",
       "img": "/Images/serumVitC.webp",
-      "category": "Skincare"
+      "category": "Skincare",
+      "price": "$21000"
     },
     {
-      "id": 16,
+      "id": 15,
       "name": "Eye palette",
       "date": "EASY EYE PALETTE",
       "description": "6-shade eyeshadow palette including bronze, pink, terracotta & brown shades.",
       "img": "/Images/sombras.webp",
-      "category": "Makeup"
+      "category": "Makeup",
+      "price": "$23000"
     }
   ]
   

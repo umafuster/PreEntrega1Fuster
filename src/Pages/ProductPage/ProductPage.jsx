@@ -7,6 +7,7 @@ import ItemListContainer from '../../Components/ItemListContainer/ItemListContai
 import "./ProductPage.css"
 
 const ProductPage = () => {
+    
     return (
         <div>
             <h1 className='productpage-title'>Products</h1>
