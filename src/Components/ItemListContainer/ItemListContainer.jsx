@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 // CSS
@@ -14,13 +13,6 @@ import { db } from "../../firebase/firebaseConfig";
 import { collection, query, where, getDocs } from "firebase/firestore";
 
 const ItemListContainer = () => {
-  /* const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    axios.get('/products.json').then((res) =>
-      setItems(res.data)
-    );
-  }, []); */
   const [products, setProducts] = useState([]);
   useEffect(() => {
     const getProducts = async () => {

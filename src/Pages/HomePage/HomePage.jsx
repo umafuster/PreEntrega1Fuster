@@ -14,7 +14,7 @@ export const HomePage = ({ greeting }) => {
 
       <div className='img-bienvenida'>
         <img className="img-inicio" src={img} alt="destello" />
-        <p className='txt-bienvenida'>Aquí encontrarás todos los productos para una piel radiante</p>
+        <p className='txt-bienvenida'>Here you will find all the products for a radiant skin</p>
       </div>
     </div>
   );

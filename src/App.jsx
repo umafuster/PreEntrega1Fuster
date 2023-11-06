@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 //Componentes
 import NavBar from './Components/NavBar/NavBar';
@@ -13,6 +13,7 @@ import CategoryPage from './Pages/CategoryPage/CategoryPage';
 import ProductPage from './Pages/ProductPage/ProductPage';
 import ShopPage from "./Pages/ShopPage/ShopPage";
 import CartContext from './Context/CartContext';
+import Cart from './Components/Cart/Cart';
 
 
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
 
   const quantityInCart = () => {
     return cart.reduce((acc, product) => acc + product.quantity, 0);
-  }
+  };
 
 
 
@@ -49,6 +50,7 @@ const App = () => {
             <Route path='/detail/:id' element={<DetailPage />} />
             <Route path='/product' element={<ProductPage />} />
             <Route path='/shop' element={<ShopPage />} />
+            <Route path='/cart' element={<Cart />} />
           </Routes>
         </BrowserRouter>
         <Footer />
