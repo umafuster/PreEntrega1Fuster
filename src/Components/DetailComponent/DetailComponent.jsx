@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import ProductCount from '../ProductCount/ProductCount';
-import CartContext from '../../Context/CartContext';
+import {CartContext} from '../../Context/CartContext';
 
 
 const DetailComponent = ({ product }) => {

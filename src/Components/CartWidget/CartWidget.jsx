@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import CartContext from '../../Context/CartContext';
+import { CartContext } from '../../Context/CartContext';
 
 
 
 
-const CartWidget = () => {
+
+function CartWidget() {
     const { quantityInCart } = useContext(CartContext);
     return (
         <div>
@@ -13,6 +14,6 @@ const CartWidget = () => {
             <span>{quantityInCart()}</span>
         </div>
     );
-};
+}
 
 export default CartWidget;

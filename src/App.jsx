@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import React, { useState } from 'react';
+import React from 'react';
 
 //Componentes
 import NavBar from './Components/NavBar/NavBar';
@@ -12,38 +12,14 @@ import DetailPage from './Pages/DetailPage/DetailPage';
 import CategoryPage from './Pages/CategoryPage/CategoryPage';
 import ProductPage from './Pages/ProductPage/ProductPage';
 import ShopPage from "./Pages/ShopPage/ShopPage";
-import CartContext from './Context/CartContext';
 import Cart from './Components/Cart/Cart';
+import {CartProvider} from './Context/CartContext';
 
 
 const App = () => {
-
-  const [cart, setCart] = useState([]);
-  const AddToCart = (product, quantity) => {
-    const addedProduct = { ...product, quantity };
-    const newCart = [...cart];
-    const isAdded = newCart.find((product) => product.id === addedProduct.id);
-
-
-    if (isAdded) {
-      isAdded.quantity += quantity;
-    } else {
-      newCart.push(addedProduct);
-    };
-    setCart(newCart);
-  };
-
-  const quantityInCart = () => {
-    return cart.reduce((acc, product) => acc + product.quantity, 0);
-  };
-
-const totalPrice = () => {
-  return cart.reduce((acc, product) => acc + product.price * product.quantity, 0)
-}
-
   return (
     <div>
-      <CartContext.Provider value={{ cart, AddToCart, quantityInCart, totalPrice }}>
+      <CartProvider>
         <BrowserRouter>
           <NavBar />
           <Routes>
@@ -51,12 +27,12 @@ const totalPrice = () => {
             <Route path='/category/:categoryId' element={<CategoryPage />} />
             <Route path='/detail/:id' element={<DetailPage />} />
             <Route path='/product' element={<ProductPage />} />
-            <Route path='/shop' element={<ShopPage />} />
+           {/*  <Route path='/shop' element={<ShopPage />} /> */}
             <Route path='/cart' element={<Cart />} />
           </Routes>
         </BrowserRouter>
         <Footer />
-      </CartContext.Provider>
+      </CartProvider>
     </div>
   );
 };

@@ -1,8 +1,11 @@
 import React, { useContext } from 'react'
-import CartContext from '../../Context/CartContext';
+import {CartContext} from '../../Context/CartContext';
 
 const Cart = () => {
-    const { cart, totalPrice } = useContext(CartContext);
+    const { cart, totalPrice, clearCart } = useContext(CartContext);
+    const handleClearCart = () => {
+        clearCart();
+    }
     return (
         <div>
             <h1>Cart</h1>
@@ -17,7 +20,15 @@ const Cart = () => {
                     </div>
                 ))
             }
-            <h2>Total Price: ${totalPrice}</h2>
+            {
+                cart.length > 0 ?
+                <div>
+                    <h2>Total Price: ${totalPrice}</h2>
+                    <button onClick={handleClearCart}>Clear Cart</button>
+                </div> :
+                <h2>Cart is empty</h2>
+            }
+
         </div>
     )
 };
