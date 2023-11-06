@@ -37,11 +37,13 @@ const App = () => {
     return cart.reduce((acc, product) => acc + product.quantity, 0);
   };
 
-
+const totalPrice = () => {
+  return cart.reduce((acc, product) => acc + product.price * product.quantity, 0)
+}
 
   return (
     <div>
-      <CartContext.Provider value={{ cart, AddToCart, quantityInCart }}>
+      <CartContext.Provider value={{ cart, AddToCart, quantityInCart, totalPrice }}>
         <BrowserRouter>
           <NavBar />
           <Routes>
