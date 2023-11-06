@@ -1,16 +1,17 @@
 import React, { useContext } from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import CartContext from '../../Context/CartContext';
 
-import { Link } from 'react-router-dom';
 
 
 
 const CartWidget = () => {
-
+    const { quantityInCart } = useContext(CartContext);
     return (
         <div>
-           <ShoppingCartIcon /> 
-           </div>
+            <ShoppingCartIcon />
+            <span>{quantityInCart()}</span>
+        </div>
     );
 };
 

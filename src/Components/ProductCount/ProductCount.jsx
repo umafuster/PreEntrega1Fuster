@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const ProductCount = ({quantity, handleAdd, handleRest}) => {
-   
+const ProductCount = ({quantity, handleAdd, handleRest, handleAddToCart}) => {
+
     return (
         <div>
 
@@ -10,9 +10,9 @@ const ProductCount = ({quantity, handleAdd, handleRest}) => {
                 <p>{quantity}</p>
                 <button onClick={handleAdd}>+</button>
             </div>
-            <button className='add-cart'>Add to Cart</button>
+            <button className='add-cart' onClick={handleAddToCart}>Add to Cart</button>
         </div>
     )
 }
 
-export default ProductCount;
+export default ProductCount; 

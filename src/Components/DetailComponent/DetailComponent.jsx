@@ -9,12 +9,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import ProductCount from '../ProductCount/ProductCount';
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
-
-
+import CartContext from '../../Context/CartContext';
 
 
 const DetailComponent = ({ product }) => {
+
+    const { cart, AddToCart } = useContext(CartContext);
+
     const { img } = product;
 
     const [quantity, setQuantity] = useState(1);
@@ -24,13 +25,10 @@ const DetailComponent = ({ product }) => {
     };
 
     const handleAdd = () => {
-       quantity < product.stock && setQuantity(quantity + 1);
+        quantity < product.stock && setQuantity(quantity + 1);
     };
 
-    const handleAddToCart = () => {
-        console.log ({...product, quantity});
-    };
-   
+
 
     return (
         <div>
@@ -59,7 +57,7 @@ const DetailComponent = ({ product }) => {
                         ${product.price}
                     </Typography>
                 </CardContent>
-                <ProductCount quantity={quantity} handleAdd={handleAdd} handleRest={handleRest} handleAddToCart={handleAddToCart}/>
+                <ProductCount quantity={quantity} handleAdd={handleAdd} handleRest={handleRest} AddToCart={() => { AddToCart(product, quantity) }} />
             </Card>
 
         </div>
