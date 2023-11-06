@@ -25,9 +25,11 @@ const Cart = () => {
                 <div>
                     <h2>Total Price: ${totalPrice}</h2>
                     <button onClick={handleClearCart}>Clear Cart</button>
+                    <Link to="/checkout">Checkout</Link>
                 </div> :
                 <h2>Cart is empty</h2>
             }
+    
 
         </div>
     )
