@@ -1,11 +1,15 @@
-import React, { useContext } from 'react'
-import { CartContext } from '../../Context/CartContext'
+import React from 'react'
+
+import CheckoutForm from '../CheckoutForm/CheckoutForm';
 
 const Checkout = () => {
-    const { cart, totalPrice, clearCart} = useContext(CartContext);
+
   return (
-    <div>Checkout</div>
+    <div>
+        <h1>Checkout</h1>
+        <CheckoutForm/>
+    </div>
   )
 }
 
-export default Checkout
+export default Checkout;

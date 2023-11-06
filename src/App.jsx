@@ -11,9 +11,9 @@ import HomePage from './Pages/HomePage/HomePage';
 import DetailPage from './Pages/DetailPage/DetailPage';
 import CategoryPage from './Pages/CategoryPage/CategoryPage';
 import ProductPage from './Pages/ProductPage/ProductPage';
-import ShopPage from "./Pages/ShopPage/ShopPage";
 import Cart from './Components/Cart/Cart';
 import {CartProvider} from './Context/CartContext';
+import Checkout from './Components/Checkout/Checkout';
 
 
 const App = () => {

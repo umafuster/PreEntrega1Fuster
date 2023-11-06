@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // CSS
-import "./ShopPage.css";
+import "./CheckoutForm.css";
 
 // Firebase
 import { collection, addDoc } from "firebase/firestore";
